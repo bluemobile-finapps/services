@@ -2,6 +2,9 @@ package org.bluemobile.finapps;
 
 import java.util.Enumeration;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -139,6 +142,14 @@ public class TransferHitController {
     	return new ApiResult(false, 0L, null);
     }
     
-    
+//    @RequestMapping(method = RequestMethod.OPTIONS, value="/**")
+//    public void manageOptions(HttpServletRequest req, HttpServletResponse response)
+//    {
+//    	String origin = req.getHeader("Origin");
+//		if(origin!=null && origin.length()!=0){
+//			response.setHeader("Access-Control-Allow-Origin", origin);
+//		}
+//		response.setHeader("Access-Control-Allow-Headers", "X-Requested-With");
+//    }
   
 }

@@ -11,6 +11,11 @@
     <context:component-scan base-package="org.bluemobile.finapps" /> 
  
     <mvc:annotation-driven />
+    <mvc:interceptors>
+	    <bean id="webContentInterceptor" 
+	          class="org.bluemobile.finapps.MyInterceptor">	        
+	    </bean>
+	</mvc:interceptors>
 
     <bean id="jspViewResolver"
         class="org.springframework.web.servlet.view.InternalResourceViewResolver">
