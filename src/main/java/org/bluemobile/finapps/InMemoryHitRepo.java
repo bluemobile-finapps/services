@@ -30,11 +30,11 @@ public class InMemoryHitRepo implements HitRepo {
 	public SourceHit findSource(TargetHit me, long distance, long milliseconds) {
 		// first, find by time
 		for(SourceHit acc: sources){
-			if (Math.abs(me.ts - acc.ts) < milliseconds &&
-					distFrom(me.loc.getLatitude(), me.loc.getLongitude(),
-							 acc.loc.getLatitude(), acc.loc.getLongitude()) < distance){
+			if (Math.abs(me.ts - acc.ts) < milliseconds) //&&
+//					distFrom(me.loc.getLatitude(), me.loc.getLongitude(),
+//							 acc.loc.getLatitude(), acc.loc.getLongitude()) < distance){
 				return acc;
-			}		
+//			}		
 		}
 		return null;
 	}
@@ -42,11 +42,11 @@ public class InMemoryHitRepo implements HitRepo {
 	public TargetHit findTarget(SourceHit me, long distance, long milliseconds) {
 		// first, find by time
 		for(TargetHit acc: targets){			
-			if (Math.abs(me.ts - acc.ts) < milliseconds&&
-					distFrom(me.loc.getLatitude(), me.loc.getLongitude(),
-							 acc.loc.getLatitude(), acc.loc.getLongitude()) < distance){
+			if (Math.abs(me.ts - acc.ts) < milliseconds )//&&
+//					distFrom(me.loc.getLatitude(), me.loc.getLongitude(),
+//							 acc.loc.getLatitude(), acc.loc.getLongitude()) < distance){
 				return acc;
-			}
+//			}
 		}
 		return null;
 	}
