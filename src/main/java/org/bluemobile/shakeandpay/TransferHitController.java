@@ -1,9 +1,6 @@
-package org.bluemobile.finapps;
+package org.bluemobile.shakeandpay;
 
 import java.util.Enumeration;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -21,7 +18,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class TransferHitController { 
 	// milliseconds
-	final long MS = 3000;
+	final long MS = 5000;
 	final long INTERVAL = 100L; 
 	
 	// meters

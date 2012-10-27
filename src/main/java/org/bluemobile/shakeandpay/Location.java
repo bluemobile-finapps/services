@@ -1,4 +1,4 @@
-package org.bluemobile.finapps;
+package org.bluemobile.shakeandpay;
 
 public class Location {
 	private double latitude;

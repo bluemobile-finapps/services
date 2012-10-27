@@ -1,4 +1,4 @@
-package org.bluemobile.finapps;
+package org.bluemobile.shakeandpay;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;

@@ -1,4 +1,4 @@
-package org.bluemobile.finapps;
+package org.bluemobile.shakeandpay;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
 

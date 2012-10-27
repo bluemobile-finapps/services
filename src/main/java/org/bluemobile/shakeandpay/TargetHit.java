@@ -1,4 +1,4 @@
-package org.bluemobile.finapps;
+package org.bluemobile.shakeandpay;
 
 public class TargetHit extends Hit {
 	public TargetHit(String name, String lastName, String acc, double lat, double lon){
